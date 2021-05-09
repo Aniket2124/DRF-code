@@ -1,0 +1,14 @@
+{% if name.pk is 1 %}
+
+<h1><a href="https://gppune.ac.in/userindex.php?dept=1">{{name.name}}</a></h1>
+<h2>{{name.Faculty}}</h2>
+{% elif name.pk is 2 %}
+<h1><a href="https://gppune.ac.in/userindex.php?dept=6">{{name.name}}</a></h1>
+<h2>{{name.Faculty}}</h2>
+{% elif name.pk is 3 %}
+<h1><a href="https://gppune.ac.in/userindex.php?dept=2">{{name.name}}</a></h1>
+<h2>{{name.Faculty}}</h2>
+{% else %}
+<h1><a href="https://gppune.ac.in/userindex.php?dept=4">{{name.name}}</a></h1>
+<h2>{{name.Faculty}}</h2>
+{% endif %}
